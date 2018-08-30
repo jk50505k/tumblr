@@ -190,8 +190,8 @@ if __name__ == '__main__':
         getVideo()
         getPicture()
 
-    # for i in tqdm(vidList):
-    #     downloadVid(video_num,i)
+    for i in tqdm(vidList):
+        downloadVid(video_num,i)
 
     for i in tqdm(picList):
         downloadPic(pic_num,i)
