@@ -73,7 +73,7 @@ def getCookies():
 
     options = webdriver.ChromeOptions()
     options.add_argument('user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"')
-    driver = webdriver.Chrome(executable_path='',chrome_options=options)
+    driver = webdriver.Chrome(executable_path='',chrome_options=options)#填入自己driver的地址，也可以换成别的浏览器
     driver.get('https://www.tumblr.com/dashboard/')
 
     elem_id=driver.find_element_by_id('signup_determine_email')
